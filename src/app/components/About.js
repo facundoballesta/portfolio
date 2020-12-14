@@ -9,7 +9,10 @@ export default class About extends React.Component{
                     <div className="row">
                         <div className="col m8">
                             <h3>Soy Facundo Ballesteros...</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, impedit quis eligendi consequuntur quam vitae fugiat commodi debitis ipsa esse! Soluta, nisi deserunt! Rerum qui alias at eaque, officia pariatur!</p>
+                            <p>
+                                Soy un Fullstack Web Dev Jr. Mayormente autodidacta.
+
+                            </p>
                         </div>
                         <div className="col m4 center-align">
                             <img src="img/avatar.jpg" alt="" className="circle responsive-img"/>
