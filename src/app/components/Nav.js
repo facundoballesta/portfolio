@@ -13,6 +13,7 @@ export default class Nav extends React.Component{
                             <ul className="right hide-on-med-and-down">
                                 <li><a href="#root">Inicio</a></li>
                                 <li><a href="#about">Acerca de mi</a></li>
+                                <li><a href="#experience">Experiencia</a></li>
                                 <li><a href="#proyects">Proyectos</a></li>
                                 <li><a href="#contact">Contacto</a></li>
                             </ul>
@@ -21,8 +22,15 @@ export default class Nav extends React.Component{
                 </nav>
             </div>
                 <ul className="sidenav" id="mobile-demo">
+                <li><div className="user-view">
+                <div className="background indigo darken-4">
+                </div>
+                <a><span className="white-text name">Facundo Ballesteros</span></a>
+                <a><span className="white-text email">Fullstack Web Dev Jr</span></a>
+                </div></li>
                     <li><a href="#root">Inicio</a></li>
                     <li><a href="#about">Acerca de mi</a></li>
+                    <li><a href="#experience">Experiencia</a></li>
                     <li><a href="#proyects">Proyectos</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>

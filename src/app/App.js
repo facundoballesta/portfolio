@@ -4,6 +4,7 @@ import React from 'react';
 import Nav from './components/Nav';
 import Land from './components/Land';
 import About from './components/About';
+import Experiencia from './components/Experiencia';
 import Repos from './components/Repos';
 import Contact from './components/Contact'
 import Footer from './components/footer'
@@ -16,6 +17,7 @@ export default class App extends React.Component{
                 <Nav/>
                 <Land/>
                 <About/>
+                <Experiencia/>
                 <Repos/>
                 <Contact/>
                 <Footer/>
