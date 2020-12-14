@@ -1,0 +1,36 @@
+{
+  "name": "nodejs-curso",
+  "version": "0.0.1",
+  "description": "Curso principiante de NodeJs",
+  "main": "index.js",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "nodemon": "^2.0.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack": "^5.10.1",
+    "webpack-cli": "^4.2.0"
+  },
+  "scripts": {
+    "start": "node src",
+    "dev": "nodemon src",
+    "webpack": "webpack --mode development --watch"
+  },
+  "keywords": [
+    "nodejs",
+    "tutorial",
+    "principiante",
+    "curso"
+  ],
+  "author": "Facundo Ballesteros",
+  "license": "ISC"
+}
