@@ -4,7 +4,8 @@ export default class Repos extends React.Component{
     constructor(){
         super();
         this.state={
-            repos: []
+            repos: [],
+            reposLoad: "Loading"
         }
     }
     componentDidMount(){
@@ -26,9 +27,13 @@ export default class Repos extends React.Component{
             this.setState({
                 repos: data
             });
+            this.setState({
+                reposLoad:"Done"
+            })
         })
     }
     render(){
+        
         return(
         <div className="section blue-grey darken-4 white-text scrollspy" id="proyects">
             <div className="container">
@@ -37,8 +42,9 @@ export default class Repos extends React.Component{
                     Aqui podras ver todos mis proyectos subidos.<br/>
                     Por cierto, esta sección consume datos desde la API de GitHub.
                 </p>
-                <div className="row">
-                    {this.state.repos.map(repo =>{
+                <div className="row repo">
+                    {this.state.reposLoad=="Done" &&
+                    this.state.repos.map(repo =>{
                         return(
                             <div className="col s12 m4" key={repo.id}>
                               <div className="card">
@@ -53,10 +59,18 @@ export default class Repos extends React.Component{
                                   <a target="__blank" className="btn grey darken-4 waves-effect waves-light" href={repo.html_url}><i className="material-icons left">chevron_right</i> Ver en GitHub</a>
                                 </div>
                               </div>
-                            </div>     
+                            </div>   
+                              
                         )
                     })}
-                </div>             
+                    {this.state.reposLoad=="Loading" &&
+                     <div className="progress cyan">
+                        <div className="indeterminate blue"></div>
+                    </div>
+                    }
+                    
+                </div> 
+                       
             </div>            
         </div>
         )
