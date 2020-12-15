@@ -21,7 +21,7 @@ export default class Contact extends React.Component{
 
     enviarFormulario(e){
         if(this.state.nombre === "" || this.state.apellido === "" || this.state.email === "" || this.state.mensaje === ""){
-            M.toast({html: 'Complete todos los campos!'});
+            M.toast({html: 'Complete todos los campos!', classes: 'red'});
         }else{
             console.log(this.state);
             fetch('/api/mail', {
@@ -34,7 +34,7 @@ export default class Contact extends React.Component{
             })
             .then(res => res.json())
             .then(data => {
-                M.toast({html: 'Mail enviado!'});
+                M.toast({html: 'Mail enviado!', classes: 'green'});
                 this.setState({
                     nombre: "",
                     apellido: "",

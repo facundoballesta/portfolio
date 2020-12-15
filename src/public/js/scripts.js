@@ -27,3 +27,4 @@ ScrollReveal().reveal('.personal', { delay: 200, interval: 300, scale: 0});
 ScrollReveal().reveal('.universidad',  { delay: 200, interval: 300, scale: 0});
 ScrollReveal().reveal('.cursos',  { delay: 200, interval: 300, scale: 0});
 ScrollReveal().reveal('.repo',  { delay: 200});
+ScrollReveal().reveal('.timeline-event',  { delay: 200, interval: 300, scale: 0});

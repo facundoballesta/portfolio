@@ -9,7 +9,7 @@ export default class FloatContact extends React.Component{
                 </a>
                 <ul>
                     <li><a className="btn-floating blue" href="#contact"><i className="material-icons">email</i></a></li>
-                    <li><a className="btn-floating green"><i className="material-icons">contact_phone</i></a></li>
+                    <li><a className="btn-floating green" href="https://wa.link/6trztz" target="__blank"><i className="material-icons">contact_phone</i></a></li>
                 </ul>
             </div>
         )
