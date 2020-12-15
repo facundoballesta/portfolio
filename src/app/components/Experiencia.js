@@ -17,7 +17,7 @@ export default class Experiencia extends React.Component {
                                     <p>Aprendo de manera autodiacta HTML y CSS y empiezo a realizar trabajos freelance.</p>
                                 </div>
                             </div>
-                            <div class="timeline-badge red lighten-3 white-text"></div>
+                            <div class="timeline-badge indigo darken-3 white-text"></div>
                         </div>
 
                         <div class="timeline-event">
@@ -29,7 +29,7 @@ export default class Experiencia extends React.Component {
                                     <p>Termino la Tecnicatura en Diseño y Animación Digital con promedio de 9.11.</p>
                                 </div>
                             </div>
-                            <div class="timeline-badge red lighten-3 white-text"></div>
+                            <div class="timeline-badge indigo darken-3 white-text"></div>
                         </div>
 
 
@@ -42,7 +42,7 @@ export default class Experiencia extends React.Component {
                                     <p>Realiza cursos en Acamica, Plan111Mil <br />Comienzo a trabajar con PHP, Codeigniter y MySql como freelancer, aplicando estas tecnologia en proyectos para clientes del sector privado</p>
                                 </div>
                             </div>
-                            <div class="timeline-badge red lighten-3 white-text"></div>
+                            <div class="timeline-badge indigo darken-3 white-text"></div>
                         </div>
 
 
@@ -55,7 +55,7 @@ export default class Experiencia extends React.Component {
                                     <p>Aprendo ReactJs, NodeJs, MongoDB y aplico estas tecnologias a mis proyectos. Participo en el programa CodoACodo</p>
                                 </div>
                             </div>
-                            <div class="timeline-badge red lighten-3 white-text"></div>
+                            <div class="timeline-badge indigo darken-3 white-text"></div>
                         </div>
 
                     </div>
