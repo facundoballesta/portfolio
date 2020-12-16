@@ -7,6 +7,7 @@ const email_pass = process.env.PASSWORD_EMAIL;
 
 router.post('/',(req,res)=>{
     const {nombre, apellido, email, mensaje} = req.body;
+    console.log(process.env.PASSWORD);
     contentHtml = '<h1>Datos de contacto:</h1><ul><li>Nombre: '+nombre+'</li><li>Apellido: '+apellido+'</li><li>Email: '+email+'</li><li>Mensaje: '+mensaje+'</li></ul>';
     const transporter = nodemailer.createTransport({
         host: 'smtp.office365.com',
