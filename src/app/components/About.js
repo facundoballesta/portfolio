@@ -30,7 +30,7 @@ export default class About extends React.Component{
                         <div className="col m8 personal">
                             <h3>Soy Facundo Ballesteros...</h3>
                             <p>
-                                Tengo <strong>{this.state.age}}</strong> años, vivo en Santa Rosa; La Pampa; Argentina y soy un <strong>Fullstack Web Dev Jr.</strong> Mayormente autodidacta. Me gusta aprender y mantenerme activo.
+                                Tengo <strong>{this.state.age}</strong> años, vivo en Santa Rosa; La Pampa; Argentina y soy un <strong>Fullstack Web Dev Jr.</strong> Mayormente autodidacta. Me gusta aprender y mantenerme activo.
                                 <br/>Me divierto trabajando con <strong>NodeJs</strong>, <strong>React</strong>, <strong>Bootstrap</strong>, <strong>Materialize</strong>, <strong>MongoDB</strong> y <strong>MySql</strong>.
 
                             </p>
