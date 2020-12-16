@@ -2,6 +2,25 @@ import React from 'react';
 
 //About
 export default class About extends React.Component{
+    constructor(){
+        super();
+        this.state = {
+            age = 21
+        }
+    }
+    calculateAge(birthday) {
+        var birthday_arr = birthday.split("/");
+        var birthday_date = new Date(birthday_arr[2], birthday_arr[1] - 1, birthday_arr[0]);
+        var ageDifMs = Date.now() - birthday_date.getTime();
+        var ageDate = new Date(ageDifMs);
+        return Math.abs(ageDate.getUTCFullYear() - 1970);
+    }
+    componentDidMount(){
+        const age = this.calculateAge("22/05/1998");
+        this.setState({
+            age : age
+        })
+    }
     render(){
         return(
             <div className="indigo  darken-2 section white-text">
@@ -11,7 +30,7 @@ export default class About extends React.Component{
                         <div className="col m8 personal">
                             <h3>Soy Facundo Ballesteros...</h3>
                             <p>
-                                Tengo <strong>21</strong> años, vivo en Santa Rosa; La Pampa; Argentina y soy un <strong>Fullstack Web Dev Jr.</strong> Mayormente autodidacta. Me gusta aprender y mantenerme activo.
+                                Tengo <strong>{this.state.age}}</strong> años, vivo en Santa Rosa; La Pampa; Argentina y soy un <strong>Fullstack Web Dev Jr.</strong> Mayormente autodidacta. Me gusta aprender y mantenerme activo.
                                 <br/>Me divierto trabajando con <strong>NodeJs</strong>, <strong>React</strong>, <strong>Bootstrap</strong>, <strong>Materialize</strong>, <strong>MongoDB</strong> y <strong>MySql</strong>.
 
                             </p>

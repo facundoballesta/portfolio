@@ -13,7 +13,7 @@ router.post('/',(req,res)=>{
         port: 587,
         auth: {
             user: 'facundoballesteros01@hotmail.com',
-            pass: process.env.PASSWORD
+            pass: process.env.PASSWORD //Password del e-Mail en variable de entorno
         }
     });
 
