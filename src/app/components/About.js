@@ -5,7 +5,7 @@ export default class About extends React.Component{
     constructor(){
         super();
         this.state = {
-            age = 21
+            age: 21
         }
     }
     calculateAge(birthday) {
