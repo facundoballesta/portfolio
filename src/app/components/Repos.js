@@ -8,11 +8,12 @@ export default class Repos extends React.Component{
             reposLoad: "Loading"
         }
     }
+    //When component load, fetch data from GitHub and set it on State
     componentDidMount(){
         fetch('https://api.github.com/users/facundoballesta/repos')
         .then(res => res.json())
         .then(data => {
-            
+            //Sorting data from GitHub
             const newData = data.sort(function(a,b){
                 if (a.node_id > b.node_id) {
                 return -1;
@@ -20,15 +21,18 @@ export default class Repos extends React.Component{
                 if (a.node_id < b.node_id) {
                 return 1;
                 }
-                // a must be equal to b
                 return 0;
             });
-            console.log(newData);
             this.setState({
                 repos: data
             });
+            //When data fetching finish and load on state, set a State "reposLoad" on "Done" to hide spinner.
             this.setState({
                 reposLoad:"Done"
+            })
+        }).catch(err =>{
+            this.setState({
+                reposLoad:"Error"
             })
         })
     }
@@ -66,6 +70,19 @@ export default class Repos extends React.Component{
                     {this.state.reposLoad=="Loading" &&
                      <div className="progress cyan">
                         <div className="indeterminate blue"></div>
+                    </div>
+                    }
+                    {this.state.reposLoad=="Error" &&
+                    <div>
+                        <div className="card red">
+                            <div className="card-content">
+                            <span className="card-title">Algo salió mal :(</span>
+                            <div className="card-action">
+                                <p>Pero puedes ver mi proyectos aquí:</p>
+                                <a className="btn black waves-effect waves-light" href="https://github.com/facundoballesta" target="__blank">Github</a>
+                            </div>
+                            </div>
+                        </div>
                     </div>
                     }
                     

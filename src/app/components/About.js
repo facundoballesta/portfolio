@@ -1,5 +1,6 @@
 import React from 'react';
 
+//About
 export default class About extends React.Component{
     render(){
         return(

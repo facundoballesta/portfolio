@@ -10,6 +10,8 @@ import Contact from './components/Contact'
 import Footer from './components/footer'
 import FloatContact from './components/floatContact'
 
+
+//App
 export default class App extends React.Component{
     render(){
         return(

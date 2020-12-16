@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Float Contact button
 export default class FloatContact extends React.Component{
     render(){
         return(

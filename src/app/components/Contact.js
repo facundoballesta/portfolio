@@ -13,16 +13,20 @@ export default class Contact extends React.Component{
         this.enviarFormulario = this.enviarFormulario.bind(this);
     }
 
+    //When User write on input
     onChange(e){
+        //Set State whit input value
         this.setState({
             [e.target.name]: e.target.value,
         })
     }
-
+    //When user submit form
     enviarFormulario(e){
+        //Validate inputs
         if(this.state.nombre === "" || this.state.apellido === "" || this.state.email === "" || this.state.mensaje === ""){
             M.toast({html: 'Complete todos los campos!', classes: 'red'});
         }else{
+            //If inputs ok, Send email (data from state) whit Nodemailer
             console.log(this.state);
             fetch('/api/mail', {
                 method: 'POST',

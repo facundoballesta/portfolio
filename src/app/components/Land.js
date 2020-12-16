@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Landing Page
 export default class Land extends React.Component{
     render(){
         return(
