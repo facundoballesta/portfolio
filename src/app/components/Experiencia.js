@@ -1,4 +1,5 @@
 import React from 'react';
+import ExperienciaItem from './ExperianciaItem';
 
 export default class Experiencia extends React.Component {
     render() {
@@ -7,57 +8,10 @@ export default class Experiencia extends React.Component {
                 <div className="container">
                     <h2>Experiencia</h2>
                     <div class="timeline">
-
-                        <div class="timeline-event">
-                            <div class="card timeline-content">
-                                <div class="card-content teal white-text">
-                                    <span class="card-title gradient white-text text-darken-4">
-                                        2017<br />
-                                    </span>
-                                    <p>Aprendo de manera autodiacta HTML y CSS y empiezo a realizar trabajos freelance.</p>
-                                </div>
-                            </div>
-                            <div class="timeline-badge indigo darken-3 white-text"></div>
-                        </div>
-
-                        <div class="timeline-event">
-                            <div class="card timeline-content">
-                                <div class="card-content teal white-text">
-                                <span class="card-title gradient white-text text-darken-4">
-                                        2018<br />
-                                    </span>
-                                    <p>Termino la Tecnicatura en Diseño y Animación Digital con promedio de 9.11.</p>
-                                </div>
-                            </div>
-                            <div class="timeline-badge indigo darken-3 white-text"></div>
-                        </div>
-
-
-                        <div class="timeline-event">
-                            <div class="card timeline-content">
-                                <div class="card-content teal white-text">
-                                    <span class="card-title gradient white-text text-darken-4">
-                                        2019<br />
-                                    </span>
-                                    <p>Realiza cursos en Acamica, Plan111Mil <br />Comienzo a trabajar con PHP, Codeigniter y MySql como freelancer, aplicando estas tecnologia en proyectos para clientes del sector privado</p>
-                                </div>
-                            </div>
-                            <div class="timeline-badge indigo darken-3 white-text"></div>
-                        </div>
-
-
-                        <div class="timeline-event">
-                            <div class="card timeline-content">
-                            <div class="card-content teal white-text">
-                                    <span class="card-title gradient white-text text-darken-4">
-                                        2020<br />
-                                    </span>
-                                    <p>Aprendo ReactJs, NodeJs, MongoDB y aplico estas tecnologias a mis proyectos. Participo en el programa CodoACodo</p>
-                                </div>
-                            </div>
-                            <div class="timeline-badge indigo darken-3 white-text"></div>
-                        </div>
-
+                        <ExperienciaItem anio="2017" texto="Aprendo de manera autodiacta HTML y CSS y empiezo a realizar trabajos freelance."/>
+                        <ExperienciaItem anio="2018" texto="Termino la Tecnicatura en Diseño y Animación Digital con promedio de 9.11."/>
+                        <ExperienciaItem anio="2019" texto="Realiza cursos en Acamica, Plan111Mil <br />Comienzo a trabajar con PHP, Codeigniter y MySql como freelancer, aplicando estas tecnologia en proyectos para clientes del sector privado"/>
+                        <ExperienciaItem anio="2020" texto="Aprendo ReactJs, NodeJs, MongoDB y aplico estas tecnologias a mis proyectos. Participo en el programa CodoACodo"/>
                     </div>
                 </div>
             </div>

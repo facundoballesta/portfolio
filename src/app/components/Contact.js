@@ -54,7 +54,7 @@ export default class Contact extends React.Component{
     }
     render(){            
         return(
-            <div className="section purple scrollspy" id="contact">
+            <div className="section purple darken-3 scrollspy" id="contact">
                 <div className="container">
                     <div className="card z-depth-4">
                         <div className="container">
