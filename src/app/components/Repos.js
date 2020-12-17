@@ -24,7 +24,7 @@ export default class Repos extends React.Component{
                 return 0;
             });
             this.setState({
-                repos: data
+                repos: data.slice(0,3)
             });
             //When data fetching finish and load on state, set a State "reposLoad" on "Done" to hide spinner.
             this.setState({
@@ -43,9 +43,10 @@ export default class Repos extends React.Component{
             <div className="container">
                 <h2>Proyectos</h2>
                 <p>
-                    Aqui podras ver todos mis proyectos subidos.<br/>
-                    Por cierto, esta sección consume datos desde la API de GitHub.
+                    Aqui podras ver todos mis ultimos 3 proyectos subidos.<br/>
+                    Por cierto, esta sección consume datos desde la API de GitHub. <br/>
                 </p>
+                <a className="btn black waves-effect waves-light" href="https://github.com/facundoballesta" target="__blank">Ver Todos</a>
                 <div className="row repo">
                     {this.state.reposLoad=="Done" &&
                     this.state.repos.map(repo =>{
