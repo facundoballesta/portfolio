@@ -6,7 +6,7 @@ export default class ExperienciaIter extends React.Component{
     }
     render(){
         return (
-            <div className="timeline-event">
+            <div className="timeline-event" data-aos="zoom-in">
                 <div className="card timeline-content">
                     <div className="card-content teal white-text">
                         <span className="card-title gradient white-text text-darken-4">

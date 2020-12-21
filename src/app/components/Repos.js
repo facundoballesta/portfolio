@@ -51,7 +51,7 @@ export default class Repos extends React.Component{
                     {this.state.reposLoad=="Done" &&
                     this.state.repos.map(repo =>{
                         return(
-                            <div className="col s12 m4" key={repo.id}>
+                            <div className="col s12 m4" key={repo.id} data-aos="zoom-in">
                               <div className="card">
                                 <div className="card-image">
                                   <img src={repo.owner.avatar_url}/>

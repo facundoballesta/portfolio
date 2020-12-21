@@ -27,7 +27,7 @@ export default class About extends React.Component{
                 <div className="container scrollspy" id="about">
                     <h2 className="center-align">Acerca de mi</h2>
                     <div className="row">
-                        <div className="col m8 personal">
+                        <div className="col m8" data-aos="fade-right">
                             <h3>Soy Facundo Ballesteros...</h3>
                             <p>
                                 Tengo <strong>{this.state.age}</strong> años, vivo en Santa Rosa; La Pampa; Argentina y soy un <strong>Fullstack Web Dev Jr.</strong> Mayormente autodidacta. Me gusta aprender y mantenerme activo.
@@ -35,24 +35,24 @@ export default class About extends React.Component{
 
                             </p>
                         </div>
-                        <div className="col m4 center-align personal">
+                        <div className="col m4 center-align" data-aos="fade-left">
                             <img src="img/avatar.jpg" alt="" className="circle responsive-img"/>
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col m8 push-m4 universidad">
+                        <div className="col m8 push-m4" data-aos="fade-left">
                             <h3>Estudios universitarios</h3>
                             <p>
                                 Realicé una <strong>Tecnicatura en Diseño y Animación Digital</strong> en la universidad <strong>Siglo 21</strong>. <br/>
                                 Finalicé la carrera con un promedio de 9,11 en el año 2018.
                             </p>
                         </div>
-                        <div className="col m4 pull-m8 center-align universidad">
+                        <div className="col m4 pull-m8 center-align" data-aos="fade-right">
                             <img src="img/s21.jpg" alt="" className="circle responsive-img"/>
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col m8 cursos">
+                        <div className="col m8" data-aos="fade-right">
                             <h3>Cursos</h3>
                             <p>
                                 Luego de la universidad, continue capacitandome. <br/>
@@ -60,7 +60,7 @@ export default class About extends React.Component{
 
                             </p>
                         </div>
-                        <div className="col m4 center-align cursos">
+                        <div className="col m4 center-align" data-aos="fade-left">
                             <img src="img/acamica.png" alt="" className="circle responsive-img"/>
                         </div>
                     </div>
