@@ -1,13 +1,22 @@
 body{
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
 }
 .land{
-    padding-top: 100px;
+  background-image: url('../img/bg-01.png');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0 20px;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .land-text{
     font-family: 'Press Start 2P', cursive;
-    font-size: 1.5em;
+    font-size: 1.2em;
     background-color: black;
     padding: 20px;
 }
